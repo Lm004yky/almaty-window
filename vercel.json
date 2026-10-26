@@ -4,8 +4,22 @@
   "outputDirectory": "dist",
   "headers": [
     {
-      "source": "/(assets/(balcony|bazaar|school)|tfjs)/(.*)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400, stale-while-revalidate=604800" }]
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, stale-while-revalidate=604800"
+        }
+      ]
+    },
+    {
+      "source": "/tfjs/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, stale-while-revalidate=604800"
+        }
+      ]
     }
   ]
 }
