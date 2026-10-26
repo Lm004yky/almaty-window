@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <canvas id="scene"></canvas>
+    <div class="fade fade-top" aria-hidden="true"></div>
+    <div class="fade fade-bottom" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="logo" href="#">School</a>
+      <nav aria-label="Primary">
+        <a href="#">About</a>
+        <a href="#">Timetable</a>
+        <a href="#">Lost &amp; found</a>
+      </nav>
+    </header>
+    <section class="hero">
+      <h1>School</h1>
+      <div class="hero-copy">
+        <p>
+          An empty corridor after the last bell. Nothing happens here: no
+          lessons, no footsteps, the janitor went home an hour ago. Move your
+          head a little and the screen becomes a window. The doors and the
+          sunlight on the floor will shift as if you were standing in the hall.
+        </p>
+        <a href="#">Learn more →</a>
+      </div>
+    </section>
+    <div id="stats" class="stats" hidden></div>
+    <div id="loading" class="loading"><p>LOADING…</p></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

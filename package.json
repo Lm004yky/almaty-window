@@ -1,0 +1,21 @@
+{
+  "name": "school-window-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "stats": "node tools/splat-stats.mjs public/assets/scene.ply public/assets/scene.ply.json"
+  },
+  "dependencies": {
+    "@sparkjsdev/spark": "2.3",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.180.0",
+    "typescript": "5.9",
+    "vite": "^7.3.7"
+  }
+}

@@ -1,0 +1,9 @@
+node_modules
+dist
+.vercel
+.DS_Store
+tools/*/.venv
+tools/*/src
+tools/*/out
+tools/*/checkpoints
+tools/*.log
