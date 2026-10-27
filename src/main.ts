@@ -9,6 +9,10 @@ const canvas = document.querySelector<HTMLCanvasElement>("#scene")!;
 const loading = document.querySelector<HTMLElement>("#loading")!;
 const statsEl = document.querySelector<HTMLElement>("#stats")!;
 
+// Пока грузится 3D, на месте окна стоит само фото: кадр тот же, что у сцены в покое.
+loading.style.setProperty("--photo", `url(${current.base}photo.jpg)`);
+loading.style.setProperty("--overscan", String(config.scene.overscan));
+
 document.title = current.title;
 document.querySelector(".logo")!.textContent = current.title;
 document.querySelector(".hero h1")!.textContent = current.title;
