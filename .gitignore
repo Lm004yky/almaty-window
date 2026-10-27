@@ -7,3 +7,4 @@ tools/*/src
 tools/*/out
 tools/*/checkpoints
 tools/*.log
+source-ply

@@ -30,7 +30,7 @@ export function createSplat(scene: THREE.Scene, renderer: THREE.WebGLRenderer) {
       enableLod: false
     })
   );
-  const mesh = new SplatMesh({ url: current.base + "scene.ply", lod: false });
+  const mesh = new SplatMesh({ url: current.base + "scene.spz", lod: false });
   // OpenCV → three.js; камера исходного фото совпадает с точкой покоя глаза.
   mesh.rotation.x = Math.PI;
   mesh.position.set(0, 0, D);
